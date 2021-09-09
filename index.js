@@ -1,18 +1,18 @@
-const OverlayTM = gsap.timeline();
-OverlayTM.from('.content-title', {
-  y: 100,
-  rotateZ: '2deg',
-  opacity: 0,
-  ease: 'power2.inOut',
-  stagger: 0.2,
-  duration: 1,
-});
-OverlayTM.to('.overlay .box', {
-  height: 0,
-  stagger: 0.1,
-  duration: 1,
-  ease: 'power4.inOut',
-});
+// const OverlayTM = gsap.timeline();
+// OverlayTM.from('.content-title', {
+//   y: 100,
+//   rotateZ: '2deg',
+//   opacity: 0,
+//   ease: 'power2.inOut',
+//   stagger: 0.2,
+//   duration: 1,
+// });
+// OverlayTM.to('.overlay .box', {
+//   height: 0,
+//   stagger: 0.1,
+//   duration: 1,
+//   ease: 'power4.inOut',
+// });
 
 const MainContent = [
   {

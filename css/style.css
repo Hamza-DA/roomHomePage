@@ -8,8 +8,11 @@
 body {
   font-family: 'Spartan', sans-serif;
   font-size: 12px;
-  overflow: hidden;
   background-color: white;
+}
+
+html {
+  overflow: hidden;
 }
 
 .attribution {
@@ -60,6 +63,7 @@ body {
 }
 
 .main {
+  min-height: 600px;
   width: 100vw;
   height: 100vh;
   display: -ms-grid;
@@ -111,7 +115,7 @@ body {
 }
 
 .main .div2 .content h3 {
-  font-size: 2.25rem;
+  font-size: 2.63vw;
   margin-bottom: 20px;
   z-index: 20;
   color: #fff;
@@ -120,8 +124,9 @@ body {
 }
 
 .main .div2 .content p {
+  font-size: 0.87vw;
   margin-bottom: 30px;
-  line-height: 1.2rem;
+  line-height: 1.4vw;
   color: #a1a1a1;
 }
 
@@ -134,13 +139,21 @@ body {
   letter-spacing: 10px;
   text-transform: uppercase;
   font-family: 'Spartan', sans-serif;
-  font-size: 12px;
+  font-size: 1vw;
   font-weight: 600;
   cursor: pointer;
 }
 
+.main .div2 .content a:hover {
+  color: #454545;
+}
+
 .main .div2 .content a svg {
   margin-left: 10px;
+}
+
+.main .div2 .content a svg path {
+  fill: currentColor;
 }
 
 .main .div2 .controls {
@@ -159,8 +172,8 @@ body {
   border: none;
   outline: none;
   background: none;
-  width: 98px;
-  height: 60px;
+  width: 7.1vw;
+  height: 5vw;
   background-color: black;
 }
 
@@ -195,7 +208,7 @@ body {
 }
 
 .main .div4 .content h4 {
-  font-size: 0.8rem;
+  font-size: 1vw;
   text-transform: uppercase;
   letter-spacing: 5px;
   font-weight: 700;
@@ -204,7 +217,8 @@ body {
 
 .main .div4 .content p {
   color: #a1a1a1;
-  line-height: 1.2rem;
+  font-size: 0.87vw;
+  line-height: 1.4vw;
 }
 
 .main .div5 {
@@ -216,6 +230,7 @@ body {
 }
 
 .overlay {
+  opacity: 0;
   pointer-events: none;
   z-index: 8;
   position: fixed;
