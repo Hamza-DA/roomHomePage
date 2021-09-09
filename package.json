@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/Hamza-DA/roomHomePage/issues"
   },
-  "homepage": "https://github.com/Hamza-DA/roomHomePage#readme"
+  "homepage": "https://github.com/Hamza-DA/roomHomePage#readme",
+  "dependencies": {
+    "gsap": "^3.7.1"
+  }
 }

@@ -4,8 +4,15 @@
     box-sizing: border-box;
 }
 
+$DarkGray: hsl(0, 0%, 63%);
+$Black: hsl(0, 0%, 0%);
+$White: hsl(0, 0%, 100%);
+$VeryDarkGray: hsl(0, 0%, 27%);
 body {
     font-family: 'Spartan', sans-serif;
+    font-size: 12px;
+    overflow: hidden;
+    background-color: $White;
 }
 
 .attribution {
@@ -15,4 +22,170 @@ body {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+.header {
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    padding: 40px 60px;
+    position: fixed;
+    .header-logo {
+        color: $White;
+        margin-right: 50px;
+        font-weight: 600;
+    }
+    .nav-links {
+        display: flex;
+        align-items: center;
+        li {
+            margin-top: 3px;
+            list-style: none;
+            margin-right: 30px;
+            .nav-link {
+                text-decoration: none;
+                color: $White;
+            }
+        }
+    }
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    div {
+        overflow: hidden;
+        position: relative;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .div1 {
+        grid-area: 1 / 1 / 5 / 5;
+    }
+    .div2 {
+        grid-area: 1 / 5 / 5 / 8;
+        display: flex;
+        align-items: center;
+        .content {
+            padding: 0 80px;
+            h3 {
+                font-size: 2.25rem;
+                margin-bottom: 20px;
+                z-index: 20;
+                color: #fff;
+                mix-blend-mode: difference;
+                position: relative;
+            }
+            p {
+                margin-bottom: 30px;
+                line-height: 1.2rem;
+                color: $DarkGray;
+            }
+            a {
+                text-decoration: none;
+                color: $Black;
+                border: none;
+                outline: none;
+                background: none;
+                letter-spacing: 10px;
+                text-transform: uppercase;
+                font-family: 'Spartan', sans-serif;
+                font-size: 12px;
+                font-weight: 600;
+                cursor: pointer;
+                svg {
+                    margin-left: 10px;
+                }
+            }
+        }
+        .controls {
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            button {
+                cursor: pointer;
+                border: none;
+                outline: none;
+                background: none;
+                width: 98px;
+                height: 60px;
+                background-color: $Black;
+                &:hover {
+                    background-color: $VeryDarkGray;
+                }
+            }
+        }
+    }
+    .div3 {
+        grid-area: 5 / 1 / 7 / 3;
+    }
+    .div4 {
+        grid-area: 5 / 3 / 7 / 6;
+        display: flex;
+        align-items: center;
+        .content {
+            padding: 0 40px;
+            h4 {
+                font-size: 0.8rem;
+                text-transform: uppercase;
+                letter-spacing: 5px;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+            p {
+                color: $DarkGray;
+                line-height: 1.2rem;
+            }
+        }
+    }
+    .div5 {
+        grid-area: 5 / 6 / 7 / 8;
+    }
+}
+
+.overlay {
+    pointer-events: none;
+    z-index: 8;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    div {
+        height: 100%;
+        width: 100%;
+        background-color: $Black;
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    .div1 {
+        grid-area: 1 / 1 / 5 / 5;
+    }
+    .div2 {
+        grid-area: 1 / 5 / 5 / 8;
+    }
+    .div3 {
+        grid-area: 5 / 1 / 7 / 3;
+    }
+    .div4 {
+        grid-area: 5 / 3 / 7 / 6;
+    }
+    .div5 {
+        grid-area: 5 / 6 / 7 / 8;
+    }
 }
