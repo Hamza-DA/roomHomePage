@@ -1,0 +1,26 @@
+{
+  "name": "room-homepage-master",
+  "version": "1.0.0",
+  "description": "front end mentor challenge",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hamza-DA/roomHomePage.git"
+  },
+  "keywords": [
+    "grid",
+    "frontend",
+    "css",
+    "scss",
+    "gsap"
+  ],
+  "author": "Hamza Dahmani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hamza-DA/roomHomePage/issues"
+  },
+  "homepage": "https://github.com/Hamza-DA/roomHomePage#readme"
+}
